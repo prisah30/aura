@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
 <title>Aura — Her Accountability Companion</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -11,7 +11,7 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --plum:       #4D0763;
+    --plum:       #3C0F34;
     --plum-light: #6B1A84;
     --rose:       #D4A8C0;
     --cream:      #FAF7F2;
@@ -30,7 +30,7 @@
     color: var(--text);
     font-size: 15px;
     line-height: 1.6;
-    max-width: 430px;
+    max-width: 1100px;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
   }
@@ -472,6 +472,67 @@
     letter-spacing: 0.5px;
     line-height: 1.8;
   }
+
+  /* ═══════════════════════════════════════════════════
+     RESPONSIVE — tablet (≥ 768px) & desktop (≥ 1024px)
+  ═══════════════════════════════════════════════════ */
+
+  @media (min-width: 768px) {
+    header { padding: 22px 48px; }
+
+    .hero { padding: 64px 56px 56px; }
+    .hero-h1 { font-size: 42px; max-width: 680px; margin-left: auto; margin-right: auto; }
+
+    .stripe { padding: 20px 56px; font-size: 15px; }
+
+    .section { padding: 56px 56px; }
+    .s-title { font-size: 32px; }
+    .s-intro { max-width: 660px; }
+
+    /* thesis: 3 items in a row */
+    .thesis { flex-direction: row; }
+    .thesis-item { flex: 1; }
+
+    /* pillars: 2x2 grid */
+    .pillars { display: grid; grid-template-columns: 1fr 1fr; flex-direction: unset; }
+
+    /* validation: 4 columns */
+    .val-grid { grid-template-columns: repeat(4, 1fr); }
+
+    /* founders: side by side */
+    .founders { flex-direction: row; gap: 24px; }
+    .founder { flex: 1; }
+
+    /* market: 4 columns */
+    .market-stats { grid-template-columns: repeat(4, 1fr); }
+
+    /* linktree: side by side */
+    .lt-cards { flex-direction: row; }
+    .lt-card { flex: 1; }
+
+    .closing { padding: 56px 56px 64px; }
+    .closing-h { font-size: 38px; }
+  }
+
+  @media (min-width: 1024px) {
+    body { font-size: 16px; }
+    header { padding: 24px 64px; }
+    .logo-word { font-size: 30px; }
+    .header-tag { font-size: 10px; }
+
+    .hero { padding: 88px 72px 72px; }
+    .hero-h1 { font-size: 52px; max-width: 760px; }
+    .hero-sub { font-size: 15px; max-width: 520px; margin-left: auto; margin-right: auto; }
+
+    .section { padding: 72px 72px; }
+    .s-title { font-size: 36px; }
+
+    .val-n { font-size: 40px; }
+    .m-num { font-size: 34px; }
+
+    .closing { padding: 72px 72px 80px; }
+    .closing-h { font-size: 44px; }
+  }
 </style>
 </head>
 <body>
@@ -612,7 +673,7 @@
       </div>
       <ul class="f-creds">
         <li>Pharma & Biotech Scientist — drug development, clinical & applied biology across leading firms, Boston & San Francisco</li>
-        <li>DATS Conference, San Francisco (2025) — presented research. Published in rare diseases across peer-reviewed journals.</li>
+        <li>ATS Conference, San Francisco (2025) — presented research. Published in rare diseases across peer-reviewed journals.</li>
         <li>Co-founder, Rucā Naturals — Ayurvedic skincare brand, formulation to market.</li>
         <li>B.S University of Manchester · M.S Northeastern University, USA</li>
       </ul>
@@ -688,7 +749,7 @@
           <div class="lt-icon li"><svg viewBox="0 0 24 24" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
           <div><p class="lt-link-label">LinkedIn</p><p class="lt-link-sub">linkedin.com/in/priyanka-sahni</p></div>
         </a>
-        <a class="lt-link" href="mailto:priyankasahni3011@gmail.com">
+        <a class="lt-link" href="mailto:sahni.priyanka30@gmail.com">
           <div class="lt-icon mail"><svg viewBox="0 0 24 24" fill="rgba(212,168,192,0.9)"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
           <div><p class="lt-link-label">Email</p><p class="lt-link-sub">priyankasahni3011@gmail.com</p></div>
         </a>
